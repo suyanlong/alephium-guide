@@ -133,9 +133,8 @@ java -jar -Xmx500m alephium-1.1.6.jar
 
 ```
 ##安装jq
-jq为json格式化工具
 ```shell
-brew install jq
+brew install jq #jq为json格式化工具
 ```
 
 ## [钱包命令指南](https://wiki.alephium.org/Wallet-Guide.html)
@@ -275,7 +274,7 @@ curl -X 'POST' 'http://127.0.0.1:12973/wallets/wallet/lock' -H 'Content-Type: ap
 ## 获取钱包余额
 GET /wallets/{wallet_name}/balances
 ```shell
-curl -X 'GET' 'http://127.0.0.1:12973/wallets/wallet/balances' -H 'accept: application/json' 
+curl -X 'GET' 'http://127.0.0.1:12973/wallets/wallet/balances' -H 'accept: application/json' | jq
 ```
 返回结果：
 ```shell

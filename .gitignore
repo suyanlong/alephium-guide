@@ -2,3 +2,4 @@
 *.log
 project
 .idea
+script/alephium*

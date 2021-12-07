@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+java -jar -Xmx500m alephium-1.1.6.jar

@@ -2,7 +2,7 @@
 
 ## 笔记本硬件参数
 
-```aidl
+```shell
 Model Name: MacBook Pro
 Model Identifier: MacBookPro16,1
 Processor Name: 6-Core Intel Core i7

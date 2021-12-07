@@ -136,6 +136,20 @@ java -jar -Xmx500m alephium-1.1.6.jar
 ```shell
 brew install jq #jq为json格式化工具
 ```
+## 查看节点信息
+```shell
+curl -X 'GET'   'http://127.0.0.1:12973/infos/node'   -H 'accept: application/json' | jq
+```
+返回结果：
+```shell
+{
+  "version": "v1.1.6",
+  "buildInfo": {
+    "releaseVersion": "1.1.6",
+    "commit": "0b4ed6cc51eccfd4ca0d3218e83bd49a64a310f2"
+  }
+}
+```
 
 ## [钱包命令指南](https://wiki.alephium.org/Wallet-Guide.html)
 
@@ -151,6 +165,18 @@ curl -X 'POST' 'http://127.0.0.1:12973/wallets' -H 'accept: application/json' -H
   "mnemonic": "target lake hawk duck laundry range okay series speed pistol admit focus dove lumber erupt century express van city proof walnut nerve motion potato"
 }
 ```
+
+## 查看钱包状态
+```shell
+curl -X 'GET' 'http://127.0.0.1:12973/wallets/wallet'   -H 'accept: application/json' | jq
+```
+返回结果：
+```shell
+{
+  "walletName": "wallet",
+  "locked": false
+}
+````
 
 ## 获取地址
 ```shell
@@ -231,12 +257,24 @@ curl -X POST 'http://127.0.0.1:12973/wallets/wallet/derive-next-miner-addresses'
 curl -X 'PUT' 'http://127.0.0.1:12973/miners/addresses' -H 'Content-Type: application/json' \
 -d '{ "addresses": ["1Bs7533GTwyJKPViA7pnH4Sz7LQj6syHrK3gmWcbeVczU", "1H3oQuYuDSnp2YL5hjTwsPNEvw8gN6U2VHLqqALBE8vhe", "1Dqj5JEpWDPFnYDYsAVNJhq3LA6kWji7Uvtw9QDi7qeJx", "15zMhmzhipn42nXEZZfAeDwhSMSdF2TpvaNNC5aSSrGP3"]}'
 ```
+备注：地址替换成自己的。
+
 
 ## 查看挖矿地址
 ```shell
-
+curl -X 'GET' 'http://127.0.0.1:12973/miners/addresses' -H 'accept: application/json' | jq
 ```
-备注：地址替换成自己的。
+返回结果：
+```shell
+{
+  "addresses": [
+    "1Bs7533GTwyJKPViA7pnH4Sz7LQj6syHrK3gmWcbeVczU",
+    "1H3oQuYuDSnp2YL5hjTwsPNEvw8gN6U2VHLqqALBE8vhe",
+    "1Dqj5JEpWDPFnYDYsAVNJhq3LA6kWji7Uvtw9QDi7qeJx",
+    "15zMhmzhipn42nXEZZfAeDwhSMSdF2TpvaNNC5aSSrGP3"
+  ]
+}
+```
 
 ## [CPU挖矿指导](https://wiki.alephium.org/CPU-Miner-Guide.html)
 ## 开启挖矿

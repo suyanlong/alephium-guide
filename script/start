@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
 java -jar -Xmx500m alephium-1.1.6.jar
+
+#java -jar -Xmx500m alephium-wallet-1.1.6.jar

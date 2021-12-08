@@ -12,7 +12,7 @@
 ├── conf      # 配置文件解析操作
 ├── crypto    # 密码库，加密算法、签名算法、哈希算法
 ├── docker    # docker 项关文件以及配置文件
-├── flow      # 整个项目的核心，这个是重点，下文会详细介绍这个。
+├── flow      # **整个项目的核心，这个是重点，下文会详细介绍这个**。
 ├── http      # http client 封装以及Swagger相关
 ├── io        # 缓存、数据库rockDB、trie底层结构功能操作
 ├── json      # json 相关解析操作
@@ -31,6 +31,41 @@
 
 ### flow
 重点介绍对象
+
+```shell
+~/github/alephium/flow/src(master*) » tree -d -L 6                                                                                                                                                                                           suyanlong@suyanlongdeMacBook-Pro-2
+.
+├── main
+    ├── resources
+    └── scala
+        └── org
+            └── alephium
+                └── flow
+                    ├── client
+                    ├── core
+                    ├── handler
+                    ├── io
+                    ├── mempool
+                    ├── mining
+                    ├── model
+                    ├── network
+                    ├── setting
+                    └── validation
+└── test
+    ├── resources
+    └── scala
+        └── org
+            └── alephium
+                └── flow
+                    ├── core
+                    ├── handler
+                    ├── io
+                    ├── mempool
+                    ├── mining
+                    ├── network
+                    ├── setting
+                    └── validation
+```
 
 ### app
 服务的入口，定义main的地方。

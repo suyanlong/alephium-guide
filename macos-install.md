@@ -93,7 +93,7 @@ app/target/scala-2.13/alephium-1.1.6+13-b30f05c5+20211207-1612-SNAPSHOT.jar
 wallet/target/scala-2.13/alephium-wallet-1.1.6+13-b30f05c5+20211207-1612-SNAPSHOT.jar
 ```
 
-##(二)github下载[最新版本](https://github.com/alephium/alephium/releases)
+## 或者下载github[最新版本](https://github.com/alephium/alephium/releases)
 ```shell
 wget https://github.com/alephium/alephium/releases/download/v1.1.6/alephium-1.1.6.jar
 wget https://github.com/alephium/alephium/releases/download/v1.1.6/alephium-wallet-1.1.6.jar

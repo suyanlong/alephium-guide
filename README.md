@@ -8,7 +8,7 @@ https://github.com/alephium
 
 ## [Lniux 安装全节点](linux-install.md)
 
-## 理论基础
+## [理论基础](flow-model.md)
 * UTOX
 * 集合论（形式化证明）
 

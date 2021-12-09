@@ -3,7 +3,7 @@
 ## 挖矿算法
 https://medium.com/@alephium/alephium-block-rewards-72d9fb9fde33
 
-## 论文
+## [论文](https://github.com/alephium/research)
 
 ## 
 
